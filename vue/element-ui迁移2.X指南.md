@@ -1,4 +1,6 @@
-﻿1. Vue 版本需要最低更新到2.5.2
+﻿# element-ui迁移2.X指南.md
+
+1. Vue 版本需要最低更新到2.5.2
 2. 没有了theme-default主题，新增了主题chalk，所以css引用路径由
  `import 'element-ui/lib/theme-default/index.css'`
  改为

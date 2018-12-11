@@ -1,4 +1,6 @@
-﻿1. vuex本地存储持久化：使用组件[vuex-persistedstate](https://github.com/robinvdvleuten/vuex-persistedstate)，可配置存储为sessionStorage或者localStorage
+﻿# smart-bi项目总结
+
+1. vuex本地存储持久化：使用组件[vuex-persistedstate](https://github.com/robinvdvleuten/vuex-persistedstate)，可配置存储为sessionStorage或者localStorage
 2.	dev环境下配置proxy，不可把所有的请求代理到服务器（\*\*/\*），否则所有异步组件也会去访问服务器，导致全部404,一定要加条件，如(\*\*/\*.json)
 3.	Vue对象带了大量附属信息，可以用JSON.parse(JSON.stringify())来转化成纯数据，此方法也可以用于简单对象深度拷贝对象，但是不支持NaN，Infinity等数据类型以及循环引用，所以慎用！当然，一般情况异步组件会自动处理无用信息，无需手动剔除。
 4.	使用Vue-resource时，一般来说请求带一个参数，当请求方式是"POST|PUT|PATCH"时，以body形式请求，当"GET|HEAD|DELETE|JSONP"时，以quey方式请求。当有些情况比如POST以query形式请求时，可以让请求带两个参数，第一个参数会以query形式传递，第二个以body形式。

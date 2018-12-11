@@ -1,4 +1,6 @@
-﻿    function opts(action, args) {
+﻿# vue-resource注意事项
+
+    function opts(action, args) {
         var options$$1 = assign({}, action), params = {}, body;
         switch (args.length) {
             case 2:
