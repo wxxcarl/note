@@ -25,7 +25,7 @@
     return options$$1;
     }
 
-#####resource请求传参，最多2个，第一个是以query形式，第二个是以body形式，如果只传一个，并且type=“POST|PUT|PATCH”，就会以body方式，除外就是query方式.
-#####接口参数如果是以query形式，并且是post或者put的时候，要带上第二个参数，比如加个空的对象
+##### resource请求传参，最多2个，第一个是以query形式，第二个是以body形式，如果只传一个，并且type=“POST|PUT|PATCH”，就会以body方式，除外就是query方式.
+##### 接口参数如果是以query形式，并且是post或者put的时候，要带上第二个参数，比如加个空的对象
 
 
