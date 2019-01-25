@@ -18,7 +18,7 @@
 
 
 ## HTML/CSS
-1. [<dialog>](https://wxxcarl.github.io/note/js/HTML-dialog)
+1. [dialog](https://wxxcarl.github.io/note/js/HTML-dialog)
 
 ## 其他
     
