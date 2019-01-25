@@ -1,8 +1,9 @@
 # wxx个人笔记
 
-## node
+## Node
 
 1. [Promise遍历目录下文件](https://wxxcarl.github.io/note/node/Promise遍历目录下文件)
+1. [你不知道的npm](https://wxxcarl.github.io/note/node/你不知道的npm)
 
 ## JS
 1. [小笔记](https://wxxcarl.github.io/note/js/小笔记)
@@ -17,6 +18,7 @@
 
 
 ## HTML/CSS
+1. [<dialog>](https://wxxcarl.github.io/note/js/HTML-dialog)
 
 ## 其他
     
