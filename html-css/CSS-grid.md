@@ -151,7 +151,7 @@
 
 ## 其它：
 
-#### container: 
+#### container
 - grid-column-gap： 设置纵向网格线大小，即列之间的间距,
 - grid-row-gap： 行之间的间距
 - grid-gap: `<grid-row-gap> <grid-column-gap>`的缩写
