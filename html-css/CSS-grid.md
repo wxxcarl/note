@@ -32,6 +32,7 @@
     .wrapper {
         display: grid;
     }
+
 #### 简单布局：
 
     .wrapper {
@@ -39,6 +40,7 @@
         grid-template-columns: 100px 100px 100px;
         grid-template-rows: 100px 100px;
     }
+
 注释：*columns列宽,rows行高,此处设置子元素为3列2行,同样可以使用其它CSS单位如`%`,`rem`和`auto`,`fr`等，`1fr`的作用等同于`flex:1;`,按比例撑满自由空间。*
 
 ![此处输入图片的描述][3]
@@ -79,6 +81,7 @@
 ![此处输入图片的描述][4]
 
 到了这里，相信你已经感受到grid的魅力了吧。
+
 #### 进阶布局
     
     .wrapper {
@@ -105,6 +108,7 @@
     .item5 {
         grid-area: footer;
     }
+
 注释：*通过引用 `grid-area`属性指定的网格区域的名称来定义网格模板。 重复网格区域的名称导致内容扩展到这些单元格。 一个或连续多个中间不带空格的点号`.`都可以表示一个空单元格。 `grid-template-areas`语法本身提供了网格结构的可视化。*
 以上`grid-template-columns`,`grid-template-rows`,`grid-template-areas`可以缩写为：
 
@@ -113,6 +117,7 @@
     "side center main" 100px
     "footer footer footer" 100px
     / 100px 100px 100px;
+
     
 ![此处输入图片的描述][5]
 
@@ -128,7 +133,7 @@
         <div class="value">CCC</div>
         <div class="value">DDD</div>
     </div>
---
+----
     .wrapper {
         display: grid;
       	grid-template-columns: 50px 1fr;
@@ -139,11 +144,13 @@
       grid-column: 1;
       word-break:break-all;
     }
+
 ![此处输入图片的描述][6]
 
-
 ## 其它：
-####container: 
+
+#### container: 
+
 - grid-column-gap： 设置纵向网格线大小，即列之间的间距,
 - grid-row-gap： 行之间的间距
 - grid-gap: `<grid-row-gap> <grid-column-gap>`的缩写
@@ -154,7 +161,9 @@
 - grid-auto-flow：未指定网格的items的自动填充方式，`row`按行依次填充，`column`按列，`dense`，尝试用后面的items填充空白空间
 - grid-template: grid-template-columns,grid-template-rows,grid-template-areas的缩写
 - grip: 所有以下属性的简写：grid-template-rows，grid-template-columns，grid-template-areas，grid-auto-rows，grid-auto-columns和grid-auto-flow,为了代码可读性，不建议这么写,grid-template足矣。
-####item
+
+#### item
+
 - grid-column-start / grid-column-end / grid-row-start /grid-row-end
     使用特定的网格线确定 grid item 在网格内的位置
     值：
@@ -166,10 +175,13 @@
     grid-column-start + grid-column-end, 和 grid-row-start + grid-row-end 的简写形式。
 - justify-self/align-self： 沿着行（列）轴对齐单个网格内的内容
 
+
 ## 其它等有空继续整理
 
+- 打开chrome调试工具查看grid会展示设置的网格，一目了然
 
 ## 参考列表
+
 - [5分钟学会 CSS Grid 布局][7]
 - [CSS Grid 系列(上)-Grid布局完整指南][8]
 - [用 grid 布局轻松解决 flex 布局不太好做的一个问题][10]
