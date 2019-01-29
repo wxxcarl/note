@@ -151,7 +151,7 @@
 
 ## 其它：
 
-#### `container`
+#### container属性
 - grid-column-gap： 设置纵向网格线大小，即列之间的间距,
 - grid-row-gap： 行之间的间距
 - grid-gap: `<grid-row-gap> <grid-column-gap>`的缩写
@@ -163,7 +163,7 @@
 - grid-template: grid-template-columns,grid-template-rows,grid-template-areas的缩写
 - grip: 所有以下属性的简写：grid-template-rows，grid-template-columns，grid-template-areas，grid-auto-rows，grid-auto-columns和grid-auto-flow,为了代码可读性，不建议这么写,grid-template足矣。
 
-#### `item`
+#### item属性
 - grid-column-start / grid-column-end / grid-row-start /grid-row-end
     使用特定的网格线确定 grid item 在网格内的位置
     值：
