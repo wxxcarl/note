@@ -1,9 +1,9 @@
 # wxx个人笔记
 
-## Node
 
-1. [Promise遍历目录下文件](https://wxxcarl.github.io/note/node/Promise遍历目录下文件)
-1. [你不知道的npm](https://wxxcarl.github.io/note/node/你不知道的npm)
+## HTML/CSS
+1. [dialog](https://wxxcarl.github.io/note/html-css/HTML-dialog)
+2. [grid](https://wxxcarl.github.io/note/html-css/CSS-grid)
 
 ## JS
 1. [小笔记](https://wxxcarl.github.io/note/js/小笔记)
@@ -11,14 +11,14 @@
 2. [smart-bi项目总结](https://wxxcarl.github.io/note/js/smart-bi%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93)
 
 ## Vue
-
 1. [vue-resource注意事项](https://wxxcarl.github.io/note/vue/vue-resource%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
 2. [element-ui迁移2.X指南](https://wxxcarl.github.io/note/vue/element-ui%E8%BF%81%E7%A7%BB2.X%E6%8C%87%E5%8D%97)
 3. [vee-validate使用教程](https://wxxcarl.github.io/note/vue/vee-validate%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
 
+## Node
+1. [Promise遍历目录下文件](https://wxxcarl.github.io/note/node/Promise遍历目录下文件)
+1. [你不知道的npm](https://wxxcarl.github.io/note/node/你不知道的npm)
 
-## HTML/CSS
-1. [dialog](https://wxxcarl.github.io/note/html-css/HTML-dialog)
 
 ## 其他
     
