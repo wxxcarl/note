@@ -22,5 +22,8 @@
 12. 更多变更请查看[更新日志](http://element-cn.eleme.io/2.0/#/zh-CN/component/changelog)
 
 
-
-
+<style>
+    .page-header {
+        display: none;
+    }
+</style>

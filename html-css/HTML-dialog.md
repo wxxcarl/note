@@ -66,3 +66,10 @@
           console.log(dialog.returnValue)
       }
     </script>`
+
+
+<style>
+    .page-header {
+        display: none;
+    }
+</style>

@@ -29,3 +29,8 @@
 ##### 接口参数如果是以query形式，并且是post或者put的时候，要带上第二个参数，比如加个空的对象
 
 
+<style>
+    .page-header {
+        display: none;
+    }
+</style>

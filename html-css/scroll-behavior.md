@@ -1,7 +1,5 @@
 # scroll-behavior
-<style>
-    html, body { scroll-behavior:smooth; }
-</style>
+
 ## CSS 
 
 #### 凡是浏览器需要滚动的地方都加一句`scroll-behavior:smooth`就好了！
@@ -33,3 +31,10 @@ DOM元素的scrollIntoView()方法是一个IE6浏览器也支持的原生JS API�
 如果我们的网页已经通过CSS设置了`scroll-behavior:smooth`声明，则我们直接执行`target.scrollIntoView()`方法就会有平滑滚动，无需再额外设置behavior参数
 
 <a href="#">回到顶部</a>
+
+<style>
+    html, body { scroll-behavior:smooth; }
+    .page-header {
+        display: none;
+    }
+</style>

@@ -47,4 +47,8 @@ g)|	一个 git url, 该 url 所指向的代码库满足条件 (a) |	git@github.c
 上面表格的定义意味着，我们在共享依赖包时，并不是非要将包发表到 npm 源上才可以提供给使用者来安装。这对于私有的不方便 publish 到远程源（即使是私有源），或者需要对某官方源进行改造，但依然需要把包共享出去的场景来说非常实用。比如引用一個本地的xxx.js,只要放到xxx目录下，新建一个package.json文件，然后就可以在项目package.json内添加该dependencies`"xxx": "file:./xxx"`，或者直接`npm install file:./xxx`，避免引用路径过长
 
 
-
+<style>
+    .page-header {
+        display: none;
+    }
+</style>

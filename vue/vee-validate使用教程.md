@@ -196,3 +196,9 @@ Validator是以`$validator`被组件自动注入到Vue实例的。同时也可�
 
 
   [1]: http://vee-validate.logaretm.com/ 
+
+<style>
+    .page-header {
+        display: none;
+    }
+</style>

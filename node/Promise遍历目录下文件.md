@@ -44,3 +44,9 @@ function walk(dir) {
 ````
 
     walk("~/home").then(x => console.log(x));
+
+<style>
+    .page-header {
+        display: none;
+    }
+</style>
