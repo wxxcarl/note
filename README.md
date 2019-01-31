@@ -4,6 +4,8 @@
 ## HTML/CSS
 1. [dialog](https://wxxcarl.github.io/note/html-css/HTML-dialog)
 2. [grid](https://wxxcarl.github.io/note/html-css/CSS-grid)
+3. [CSS-var](https://wxxcarl.github.io/note/html-css/CSS-var)
+4. [scroll-behavior](https://wxxcarl.github.io/note/html-css/scroll-behavior)
 
 ## JS
 1. [小笔记](https://wxxcarl.github.io/note/js/小笔记)
