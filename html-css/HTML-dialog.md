@@ -1,5 +1,7 @@
-# `<dialog>`
+# dialog
+
 ## 属性
+
 - ### open
     直接显示对话框，表示这个对话框可以进行互动
 - ### returnValue
