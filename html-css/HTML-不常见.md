@@ -18,3 +18,11 @@
 直接下载并重命名，而不是浏览器打开
 
         <a href="downloadpdf.php" download="download.pdf">点击直接下载并保存成 download.pdf 文件</a>
+
+
+
+<style>
+    .page-header {
+        display: none;
+    }
+</style>

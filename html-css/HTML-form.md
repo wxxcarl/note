@@ -140,3 +140,14 @@ validity属性
 - typeMismatch:  值不是预期相匹配的类型
 - valid: 值是否合法
 - valueMissing:  元素没有值
+
+
+
+
+
+
+<style>
+    .page-header {
+        display: none;
+    }
+</style>
