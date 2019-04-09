@@ -307,3 +307,9 @@
         // Array [ "foo", "foo" ]
 
 - ### 其他，都是提案阶段，或者使用场景太小，暂不列举
+
+<style>
+    .page-header {
+        display: none;
+    }
+</style>
