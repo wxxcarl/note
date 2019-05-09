@@ -11,7 +11,7 @@
 - ### CommonsChunkPlugin废弃
     这是最主要的改动，wenpack4使用`optimization.splitChunks`配置进行模块划分
 
-    #### `CommonsChunkPlugin`的缺点
+#### `CommonsChunkPlugin`的缺点
 
     1. 如今web应用多为SPA，遇到的首要问题是，所有模块打包到一起之后，如何避免首次入口文件过大，导致首屏渲染速度大大降低。解决方法相比都知道，可以使用`import()`语法实现模块的懒加载,比如`vue-router`:
 
@@ -51,7 +51,7 @@
 
     很多人往往不明白为什么要这样配置三次(分别是为了提取第三方模块，运行模块和业务模块)，另外其他的各种文档还有各种不同的配置。
 
-    #### `SplitChunksPlugin`
+#### `SplitChunksPlugin`
 
     `SplitChunksPlugin` 的出现就是为了解决上述问题。根据字面意思理解,“split”,切割，它能够抽出懒加载模块之间的公共模块，并且不会抽到父级，而是会与首次用到的懒加载模块并行加载，这样我们就可以放心的使用懒加载模块了。看如下例子：
 
@@ -109,3 +109,9 @@
         // modules
         import $ from 'jquery';
         $('.my-element').animate(/* ... */);
+
+<style>
+    .page-header {
+        display: none;
+    }
+</style>
