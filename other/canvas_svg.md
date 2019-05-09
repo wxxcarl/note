@@ -3,16 +3,19 @@
 真正对这两者产生兴趣，是在做数据可视化的过程中，通常有两种普遍选择，highcharts 和 echarts，他们分别用SVG和canvas来实现，看起来效果差不多，实际上两者的区别还是巨大的。
 
 ### SVG：
+
 SVG 是一种使用 XML 描述 2D 图形的语言，历史悠久，2003年就成为W3C标准<br>
 SVG 基于 XML，这意味着 SVG DOM 中的每个元素都是可用的。您可以为某个元素附加 JavaScript 事件处理器。<br>
 在 SVG 中，每个被绘制的图形均被视为对象。如果 SVG 对象的属性发生变化，那么浏览器能够自动重现图形。
 
 ### Canvas：
+
 Canvas 通过 JavaScript 来绘制 2D 图形，HTML5提供的新元素，`<canvas>`只是用来定义图形所在的空间。<br>
 Canvas 是逐像素进行渲染的。<br>
 在 canvas 中，一旦图形被绘制完成，它就不会继续得到浏览器的关注。如果其位置发生变化，那么整个场景也需要重新绘制，包括任何或许已被图形覆盖的对象
 
 ### 功能对比
+
 | Canvas | SVG |
 |-----|----|
 |基于像素|基于形状(图形元素)|
@@ -22,6 +25,7 @@ Canvas 是逐像素进行渲染的。<br>
 |只能通过script修改|script和css都可以修改|
 
 ### 性能对比
+
 ![canvas vs svg 性能](http://aicaistatic.oss-cn-hangzhou.aliyuncs.com/s/img/201904/22115502544.webp)
 <center>canvas vs svg 性能(来源microsoft开发社区)</center>
 
