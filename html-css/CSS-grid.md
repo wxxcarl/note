@@ -175,10 +175,22 @@
     grid-column-start + grid-column-end, 和 grid-row-start + grid-row-end 的简写形式。
 - justify-self/align-self： 沿着行（列）轴对齐单个网格内的内容
 
+#### 工具函数
+这两个函数非常有用：
 
-## 其它等有空继续整理
+- repeat，重复布局：
 
-- 打开chrome调试工具查看grid会展示设置的网格，一目了然
+    `grid-template-columns: repeat(3, 1fr);`
+
+- minmax，同时指定最小值和最大值：
+
+    `grid-template-columns: repeat(3, minmax(200px, 1fr));`
+
+两者通常一起使用
+
+`grid-template-columns: repeat(auto-fit,minmax(20px,1fr));`
+repeat第一个参数可以指定具体数值，也可以使用`auto-fit`和`auto-fill`，两者的区别是，容器大小足够的前提下，`auto-fill` 遵循'重复次数最大原则'，可能产生空的网格，而`auto-fit`则不会
+
 
 ## 参考列表
 

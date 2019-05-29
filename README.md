@@ -8,6 +8,7 @@
 4. [scroll-behavior](https://wxxcarl.github.io/note/html-css/scroll-behavior)
 4. [HTML-form](https://wxxcarl.github.io/note/html-css/HTML-form)
 4. [HTML不常见但实用系列](https://wxxcarl.github.io/note/html-css/HTML-不常见)
+4. [CSS-color](https://wxxcarl.github.io/note/html-css/CSS-color)
 
 ## JS
 1. [小笔记](https://wxxcarl.github.io/note/js/小笔记)

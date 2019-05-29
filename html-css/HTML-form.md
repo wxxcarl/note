@@ -40,6 +40,10 @@
 
     <input type="week"/>
 
+*题外： 密码表单自动填充，chrome浏览器会默认添加一个底色，且无法覆盖，可以用内投影来覆盖。`-webkit-box-shadow: 0 0 0px 100px white inset;`*
+
+
+
 
 ## 二、新的标签
 以下属性仅用于展示数据，不会被表单提交
