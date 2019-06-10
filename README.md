@@ -9,6 +9,8 @@
 4. [HTML-form](https://wxxcarl.github.io/note/html-css/HTML-form)
 4. [HTML不常见但实用系列](https://wxxcarl.github.io/note/html-css/HTML-不常见)
 4. [CSS-color](https://wxxcarl.github.io/note/html-css/CSS-color)
+4. [CSS-counter](https://wxxcarl.github.io/note/html-css/CSS-counter)
+4. [CSS-伪类选择器应用](https://wxxcarl.github.io/note/html-css/CSS-伪类选择器应用)
 
 ## JS
 1. [小笔记](https://wxxcarl.github.io/note/js/小笔记)
@@ -16,6 +18,7 @@
 2. [smart-bi项目总结](https://wxxcarl.github.io/note/js/smart-bi%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93)
 3. [JS中常用的按位运算应用](https://wxxcarl.github.io/note/js/按位运算)
 4. [ES6 - ES10](https://wxxcarl.github.io/note/js/ES6-ES10)
+4. [commonjs-ES6Module](https://wxxcarl.github.io/note/js/commonjs-ES6Module)
 
 ## Vue
 1. [vue-resource注意事项](https://wxxcarl.github.io/note/vue/vue-resource%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
