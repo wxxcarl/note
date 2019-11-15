@@ -11,3 +11,10 @@
 -  Ctrl + X之后按Y保存
 
 - 创建快捷方式 `sudo ln -s /Volumes/BOOTCAMP ~/Desktop/My Disk` 或者文件夹 `sudo ln -s /Volumes ~/Desktop/My Disks`
+
+
+<style>
+    .page-header {
+        display: none;
+    }
+</style>

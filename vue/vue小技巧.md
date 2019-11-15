@@ -176,3 +176,10 @@ export default {
 }
 </script>
 ````
+
+
+<style>
+    .page-header {
+        display: none;
+    }
+</style>

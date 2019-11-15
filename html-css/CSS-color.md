@@ -45,3 +45,8 @@ RGB色彩对机器实现是友好的，因此也是电脑显示器显示彩色�
         background-color: rgb(30, 180, 120);
     }
 </style>
+<style>
+    .page-header {
+        display: none;
+    }
+</style>

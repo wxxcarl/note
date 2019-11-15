@@ -22,3 +22,10 @@
 - 大文件cdn引用, 配置`externals`
 - vue-cli-service build --modern 
 - 合理配置[prefetch](https://cli.vuejs.org/zh/guide/html-and-static-assets.html#prefetch)
+
+
+<style>
+    .page-header {
+        display: none;
+    }
+</style>

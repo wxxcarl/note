@@ -42,3 +42,10 @@
 子序列，`counters(checkNumber, '-')`,
 
 *详情参考[张鑫旭-counter计数器详解](https://www.zhangxinxu.com/wordpress/2014/08/css-counters-automatic-number-content/)*
+
+
+<style>
+    .page-header {
+        display: none;
+    }
+</style>

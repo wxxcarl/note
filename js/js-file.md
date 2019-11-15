@@ -124,3 +124,10 @@ fileInputer.addEventListener('change', function (event) {
 }, false);
 ````
 `readAsText`方法会读取整个文件的内容，会严重浪费性能，甚至导致浏览器卡死
+
+
+<style>
+    .page-header {
+        display: none;
+    }
+</style>

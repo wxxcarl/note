@@ -19,11 +19,14 @@
 3. [JS中常用的按位运算应用](https://wxxcarl.github.io/note/js/按位运算)
 4. [ES6 - ES10](https://wxxcarl.github.io/note/js/ES6-ES10)
 4. [commonjs-ES6Module](https://wxxcarl.github.io/note/js/commonjs-ES6Module)
+4. [create-object](https://wxxcarl.github.io/note/js/create-object)
+4. [js-file](https://wxxcarl.github.io/note/js/js-file)
 
 ## Vue
 1. [vue-resource注意事项](https://wxxcarl.github.io/note/vue/vue-resource%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
 2. [element-ui迁移2.X指南](https://wxxcarl.github.io/note/vue/element-ui%E8%BF%81%E7%A7%BB2.X%E6%8C%87%E5%8D%97)
 3. [vee-validate使用教程](https://wxxcarl.github.io/note/vue/vee-validate%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
+4. [vue.js小技巧](https://wxxcarl.github.io/note/vue/vue小技巧)
 
 ## Node
 1. [Promise遍历目录下文件](https://wxxcarl.github.io/note/node/Promise遍历目录下文件)
@@ -34,4 +37,6 @@
 1. [yapi_vs_rap2](https://wxxcarl.github.io/note/other/yapi_vs_rap2)
 1. [webpack3to4](https://wxxcarl.github.io/note/other/webpack3to4)
 1. [canvas_svg](https://wxxcarl.github.io/note/other/canvas_svg)
+1. [排序算法](https://wxxcarl.github.io/note/other/排序算法)
+1. [性能优化](https://wxxcarl.github.io/note/other/faster)
     
