@@ -45,3 +45,10 @@
                                         url(img/test-2x.png) 2x,
                                         url(my-img-print.png) 600dpi);
         }
+
+
+<style>
+    .page-header {
+        display: none;
+    }
+</style>s

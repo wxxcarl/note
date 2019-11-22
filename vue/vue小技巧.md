@@ -75,7 +75,7 @@ export const mutations = {
 };
 ````
 使用示例
-```
+````
 <template>
   <div>
     <p>Count: {{ count }}</p>

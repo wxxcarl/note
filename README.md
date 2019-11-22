@@ -11,6 +11,7 @@
 4. [CSS-color](https://wxxcarl.github.io/note/html-css/CSS-color)
 4. [CSS-counter](https://wxxcarl.github.io/note/html-css/CSS-counter)
 4. [CSS-伪类选择器应用](https://wxxcarl.github.io/note/html-css/CSS-伪类选择器应用)
+4. [滤镜和混合模式](https://wxxcarl.github.io/note/html-css/滤镜和混合模式)
 
 ## JS
 1. [小笔记](https://wxxcarl.github.io/note/js/小笔记)
@@ -21,12 +22,15 @@
 4. [commonjs-ES6Module](https://wxxcarl.github.io/note/js/commonjs-ES6Module)
 4. [create-object](https://wxxcarl.github.io/note/js/create-object)
 4. [js-file](https://wxxcarl.github.io/note/js/js-file)
+4. [error](https://wxxcarl.github.io/note/js/错误监控)
 
 ## Vue
 1. [vue-resource注意事项](https://wxxcarl.github.io/note/vue/vue-resource%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
 2. [element-ui迁移2.X指南](https://wxxcarl.github.io/note/vue/element-ui%E8%BF%81%E7%A7%BB2.X%E6%8C%87%E5%8D%97)
 3. [vee-validate使用教程](https://wxxcarl.github.io/note/vue/vee-validate%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
 4. [vue.js小技巧](https://wxxcarl.github.io/note/vue/vue小技巧)
+4. [vue3](https://wxxcarl.github.io/note/vue/vue3)
+4. [vuex本质](https://wxxcarl.github.io/note/vue/vuex)
 
 ## Node
 1. [Promise遍历目录下文件](https://wxxcarl.github.io/note/node/Promise遍历目录下文件)
