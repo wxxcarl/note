@@ -23,44 +23,44 @@
     更详细内容请参考 [ES6 Class 继承与 super](https://segmentfault.com/a/1190000015565616)
 
 - ### Module
+- 导出
+    ````js
+    export var name = 'wxxcarl'
+    export const sqrt = Math.sqrt
+    export {name, sqrt}
+    export function myModule(someArg) {
+        return someArg;
+    }  
+    ````
+- 导入
 
-    - 导出
+    ```js
+    import {myModule} from 'myModule'
+    import {name,sqrt} from 'test'
+    ```
 
-            export var name = 'wxxcarl'
-            export const sqrt = Math.sqrt
-            export {name, sqrt}
-            export function myModule(someArg) {
-                return someArg;
-            }  
+- 与`export default`的区别
 
-    - 导入
+1. 一个文件中，`export`可以多个，`export default`仅有一个
 
-            import {myModule} from 'myModule'
-            import {name,sqrt} from 'test'
+2. 通过`export`方式导出，在导入时要加`{ }`，`export default`则不需要
 
-
-    - 与`export default`的区别
-    
-        1. 一个文件中，`export`可以多个，`export default`仅有一个
-
-        2. 通过`export`方式导出，在导入时要加`{ }`，`export default`则不需要
-
-    -  一条import 语句可以同时导入默认函数和其它变量。
+-  一条import 语句可以同时导入默认函数和其它变量。
     `import defaultMethod, { otherMethod } from 'xxx.js'`
 
 - ### Promise
+    ```js
+    var waitSecond = new Promise(function(resolve, reject) {
+        setTimeout(resolve, 1000);
+    })
 
-        var waitSecond = new Promise(function(resolve, reject) {
-            setTimeout(resolve, 1000);
-        })
-
-        waitSecond.then(function() {
-            console.log("Hello"); // 1秒后输出"Hello"
-            return waitSecond;  // ！！注意！！
-        }).then(function(){
-            console.log("Hi"); // 2秒后输出"Hi"
-        })
-
+    waitSecond.then(function() {
+        console.log("Hello"); // 1秒后输出"Hello"
+        return waitSecond;  // ！！注意！！
+    }).then(function(){
+        console.log("Hi"); // 2秒后输出"Hi"
+    })
+    ```
 
 - ### 箭头函数
 
@@ -77,26 +77,27 @@
 - ### 解构和延展操作符
 
     可以设置默认值:
+    ```js
+    var a, b;
+    [a=5, b=7] = [1];
+    console.log(a); // 1
+    console.log(b); // 7
+    ```
 
-        var a, b;
-        [a=5, b=7] = [1];
-        console.log(a); // 1
-        console.log(b); // 7
-    
-    ES6中只支持数组的延展操作符，ES7中增加了对象的支持
+ES6中只支持数组的延展操作符，ES7中增加了对象的支持
 
     
-    其他具体使用方法可以参考[阮一峰-ES6入门之解构赋值](http://es6.ruanyifeng.com/#docs/destructuring)
+其他具体使用方法可以参考[阮一峰-ES6入门之解构赋值](http://es6.ruanyifeng.com/#docs/destructuring)
 
 - ### 对象属性简写
-
-        const name='Ming',age='18',city='mail';
-        const student = {
-            name,
-            age,
-            sex
-        }
-
+    ```js
+    const name='Ming',age='18',city='mail';
+    const student = {
+        name,
+        age,
+        sex
+    }
+    ```
 - ### Symbol
 
 - ### Set (WeakSet) 和 Map (WeakMap) 数据结构
@@ -120,43 +121,43 @@
     - `WeakMap` 只接受对象作为键名（null除外）,而且键名所指向的对象，不计入垃圾回收机制
 
 - ### Generator函数
+    ```js
+    function* helloWorldGenerator() {
+        yield 'hello';
+        yield 'world';
+        return 'ending';
+    }
 
-        function* helloWorldGenerator() {
-            yield 'hello';
-            yield 'world';
-            return 'ending';
-        }
+    var hw = helloWorldGenerator();
 
-        var hw = helloWorldGenerator();
+    hw.next()
+    // { value: 'hello', done: false }
 
-        hw.next()
-        // { value: 'hello', done: false }
+    hw.next()
+    // { value: 'world', done: false }
 
-        hw.next()
-        // { value: 'world', done: false }
+    hw.next()
+    // { value: 'ending', done: true }
 
-        hw.next()
-        // { value: 'ending', done: true }
-
-        hw.next()
-        // { value: undefined, done: true }
-
+    hw.next()
+    // { value: undefined, done: true }
+    ```
 - ### Reflect 对象
-
-        Reflect.apply(target, thisArg, args)
-        Reflect.construct(target, args)
-        Reflect.get(target, name, receiver)
-        Reflect.set(target, name, value, receiver)
-        Reflect.defineProperty(target, name, desc)
-        Reflect.deleteProperty(target, name)
-        Reflect.has(target, name)
-        Reflect.ownKeys(target)
-        Reflect.isExtensible(target)
-        Reflect.preventExtensions(target)
-        Reflect.getOwnPropertyDescriptor(target, name)
-        Reflect.getPrototypeOf(target)
-        Reflect.setPrototypeOf(target, prototype)
-
+    ```js
+    Reflect.apply(target, thisArg, args)
+    Reflect.construct(target, args)
+    Reflect.get(target, name, receiver)
+    Reflect.set(target, name, value, receiver)
+    Reflect.defineProperty(target, name, desc)
+    Reflect.deleteProperty(target, name)
+    Reflect.has(target, name)
+    Reflect.ownKeys(target)
+    Reflect.isExtensible(target)
+    Reflect.preventExtensions(target)
+    Reflect.getOwnPropertyDescriptor(target, name)
+    Reflect.getPrototypeOf(target)
+    Reflect.setPrototypeOf(target, prototype)
+    ```
 - ### Proxy 对象
 
     - `get(target, propKey, receiver)`：拦截对象属性的读取，比如proxy.foo和proxy['foo']。
@@ -190,22 +191,22 @@
 - ### Array.prototype.includes()
 
 - ### 指数操作符`**`
-
-        2**2 === Math.pow(2,2)
-
+    ```js
+    2**2 === Math.pow(2,2)
+    ```
 ## ES8
 
 - ### async/await
 
     Generator 函数的语法糖
-
-        const asyncReadFile = async function () {
-            const f1 = await readFile('/etc/fstab');
-            const f2 = await readFile('/etc/shells');
-            console.log(f1.toString());
-            console.log(f2.toString());
-        };
-
+    ```js
+    const asyncReadFile = async function () {
+        const f1 = await readFile('/etc/fstab');
+        const f2 = await readFile('/etc/shells');
+        console.log(f1.toString());
+        console.log(f2.toString());
+    };
+    ```
 - ### Object.values() 和 Object.entries()
 
 - ### String padding
@@ -233,13 +234,13 @@
 ## ES9
 
 - ### 异步迭代
-
-        async function process(array) {
-            for await (let i of array) {
-                doSomething(i);
-            }
+    ```js
+    async function process(array) {
+        for await (let i of array) {
+            doSomething(i);
         }
-
+    }
+    ```
 - ### Promise.finally()
 
     指定Promise的最终逻辑，无论成功失败
@@ -247,21 +248,21 @@
 - ### 正则表达式命名捕获组
 
     ES2018允许命名捕获组使用符号?<name>，在打开捕获括号(后立即命名
-
-        const reDate = /(?<year>[0-9]{4})-(?<month>[0-9]{2})-(?<day>[0-9]{2})/,
-        match  = reDate.exec('2018-04-30'),
-        year   = match.groups.year,  // 2018
-        month  = match.groups.month, // 04
-        day    = match.groups.day;   // 30
-
+    ```js
+    const reDate = /(?<year>[0-9]{4})-(?<month>[0-9]{2})-(?<day>[0-9]{2})/,
+    match  = reDate.exec('2018-04-30'),
+    year   = match.groups.year,  // 2018
+    month  = match.groups.month, // 04
+    day    = match.groups.day;   // 30
+    ```
     任何匹配失败的命名组都将返回undefined。
     
     命名捕获也可以使用在replace()方法中：
-
-        const reDate = /(?<year>[0-9]{4})-(?<month>[0-9]{2})-(?<day>[0-9]{2})/,
-        d      = '2018-04-30',
-        usDate = d.replace(reDat, '$<month>-$<day>-$<year>')
-
+    ```js
+    const reDate = /(?<year>[0-9]{4})-(?<month>[0-9]{2})-(?<day>[0-9]{2})/,
+    d      = '2018-04-30',
+    usDate = d.replace(reDat, '$<month>-$<day>-$<year>')
+    ```
 - ### 正则表达式反向断言
 
     - 肯定反向断言, 非数字\D必须存在 `(?<=\D)`
@@ -270,10 +271,10 @@
 - ### 正则表达式dotAll模式
 
     正则表达式中点.匹配除回车外的任何单字符，标记s改变这种行为，允许行终止符的出现，例如：
-
-        /hello.world/.test('hello\nworld');  // false
-        /hello.world/s.test('hello\nworld'); // true
-
+    ````js
+    /hello.world/.test('hello\nworld');  // false
+    /hello.world/s.test('hello\nworld'); // true
+    ````
 ## ES10
 
 - ### Array的`flat()`方法和`flatMap()`方法
@@ -286,11 +287,11 @@
 - ### Object.fromEntries()
 
     `Object.entries()` 的逆向操作
-
-        const map = new Map([ ['foo', 'bar'], ['baz', 42] ])
-        const obj = Object.fromEntries(map)
-        console.log(obj) // { foo: "bar", baz: 42 }
-
+    ```js
+    const map = new Map([ ['foo', 'bar'], ['baz', 42] ])
+    const obj = Object.fromEntries(map)
+    console.log(obj) // { foo: "bar", baz: 42 }
+    ```
 - ### Symbol.prototype.description
 
     获取Symbol类型数据的描述
@@ -298,14 +299,14 @@
 - ### String.prototype.matchAll
 
     可以用来替换 `regexp.exec` 或者 regexp 的`/g`标志,该方法返回一个迭代器，需配合`for...of`, `array spread`, or `Array.from()` 实现功能
+    ```js
+    const regexp = RegExp('foo*','g'); 
+    const str = 'table football, foosball';
+    let matches = str.matchAll(regexp);
 
-        const regexp = RegExp('foo*','g'); 
-        const str = 'table football, foosball';
-        let matches = str.matchAll(regexp);
-
-        Array.from(matches, m => m[0]);
-        // Array [ "foo", "foo" ]
-
+    Array.from(matches, m => m[0]);
+    // Array [ "foo", "foo" ]
+    ```
 - ### 其他，都是提案阶段，或者使用场景太小，暂不列举
 
 <style>

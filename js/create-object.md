@@ -5,7 +5,7 @@
 - proto : 必须。表示新建对象的原型对象，即该参数会被赋值到目标对象(即新对象，或说是最后返回的对象)的原型上。该参数可以是null， 对象， 函数的prototype属性 （创建空的对象时需传null , 否则会抛出TypeError异常）。
 - propertiesObject : 可选。 添加到新创建对象的可枚举属性（即其自身的属性，而不是原型链上的枚举属性）对象的属性描述符以及相应的属性名称。这些属性对应[Object.defineProperties()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties)的第二个参数。
 如：
-````
+````js
 var obj = {};
 Object.defineProperties(obj, {
 'property1': {
@@ -28,7 +28,7 @@ Object.defineProperties(obj, {
 - `new Object()` 通过构造函数来创建对象, 添加的属性是在自身实例下，修改的属性影响原始对象。
 - `Object.create()` 可以理解为继承一个对象, 添加的属性是在原型下，修改的属性不影响原始对象。
 
-````
+````js
 // new Object() 方式创建
 var a = {  rep : 'apple' }
 var b = new Object(a)
@@ -60,7 +60,7 @@ console.log(a.name) // undefined
 - `Object.create()`
 
 创建的对象，属性和方法是添加在`__proto__`上的
-````
+````js
 var proto = {
     name: 'John',
     talk(){ }
@@ -75,7 +75,7 @@ console.log(o)
 ````
 
 如果用构造函数实现，则需要设置prototype:
-````
+````js
 var People = function(){}
 People.prototype.name = 'John'
 People.prototype.talk = function() {}
@@ -86,7 +86,7 @@ var p = new People();
 
 作用与 `__proto__` 相同，用来设置一个对象的 prototype 对象，返回参数对象本身。它是 ES6 正式推荐的设置原型对象的方法。
 
-````
+````js
 var proto = {
     name: 'John',
     talk(){ }
@@ -104,25 +104,25 @@ console.log(o)
 - `Object.getPrototypeOf()`
 
 读取一个对象的原型对象
-````
+````js
 Object.getPrototypeOf('foo') === String.prototype // true
 Object.getPrototypeOf(true) === Boolean.prototype // true
 ````
 
 ### 五、 原型属性的继承
 Object.assign 是不能拷贝到继承或原型上的属性和方法的
-````
+````js
 var o2 = Object.assign({}, o)
 o2.name // undefined
 ````
 - 方法一， getPrototypeOf()得到属性之后继承
-````
+````js
 var originProto = Object.getPrototypeOf(o);
 var originProto2 = Object.create(originProto);
 var o2 = Object.assign(originProto2, o);
 ````
 - 方法二(推荐)
-````
+````js
 var originProto = Object.getPrototypeOf(o);
 var originDesc = Object.getOwnPropertyDescriptors(o)
 var o2 = Object.create(originProto, originDesc);

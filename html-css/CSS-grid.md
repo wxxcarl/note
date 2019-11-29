@@ -20,133 +20,136 @@
 ## 简单示例
 
 第一步当然是先设置容器
-
-    <div class="wrapper">
-      <div class="item1">1</div>
-      <div class="item2">2</div>
-      <div class="item3">3</div>
-      <div class="item4">4</div>
-      <div class="item5">5</div>
-      <div class="item6">6</div>
-    </div>
-    .wrapper {
-        display: grid;
-    }
-
+```html
+<div class="wrapper">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+    <div class="item6">6</div>
+</div>
+```
+```css
+.wrapper {
+    display: grid;
+}
+```
 #### 简单布局：
-
-    .wrapper {
-        display: grid;
-        grid-template-columns: 100px 100px 100px;
-        grid-template-rows: 100px 100px;
-    }
-
+```css
+.wrapper {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+}
+```
 注释：*columns列宽,rows行高,此处设置子元素为3列2行,同样可以使用其它CSS单位如`%`,`rem`和`auto`,`fr`等，`1fr`的作用等同于`flex:1;`,按比例撑满自由空间。*
 
 ![此处输入图片的描述][3]
 
 #### 个性化布局：
-    
-    //删除item6
-    .wrapper {
-        display: grid;
-        grid-template-columns: 100px 100px 100px;
-        grid-template-rows: 100px 100px 100px;
-    }
-    .item1 {
-        grid-column:1/3;
-    }
-    .item2 {
-        grid-row:1/3;
-      	grid-column: 3/4;
-    }
-    .item3 {
-        grid-row: 2/4;
-    }
-    .item5 {
-        grid-column: 2/4;
-    }
-    
+
+````css
+//删除item6
+.wrapper {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+.item1 {
+    grid-column:1/3;
+}
+.item2 {
+    grid-row:1/3;
+    grid-column: 3/4;
+}
+.item3 {
+    grid-row: 2/4;
+}
+.item5 {
+    grid-column: 2/4;
+}
+````
 `grid-column:1/3` 为`grid-column-start: 1;`和 `grid-column-end: 3;`的缩写,表示从column第1根网格线到第3根网格线区域，以此类推，不指定则自动填充，`grid-row`同理。
 没有指定结束行值(只有一个值)，则该网格项默认跨越1个轨道,也可以理解为放在该值对应的网格内。
 可以用`[]`给网格线命名,可多个名字,如
-    
-    .wrapper {
-        grid-template-rows: [line1] 100px [line2 line2-2] 100px [line3] 100px [line4]
-    }
-    .item3 {
-        grid-row: line2 / line4;
-    }
-    
+```css
+.wrapper {
+    grid-template-rows: [line1] 100px [line2 line2-2] 100px [line3] 100px [line4]
+}
+.item3 {
+    grid-row: line2 / line4;
+}
+```
 ![此处输入图片的描述][4]
 
 到了这里，相信你已经感受到grid的魅力了吧。
 
 #### 进阶布局
-    
-    .wrapper {
-        display: grid;
-        grid-template-columns: 100px 100px 100px;
-      	grid-template-rows: 100px 100px 100px;
-      	grid-template-areas: 
-        "header header header"
-        "side center main"
-        "footer footer footer";
-    }
-    .item1 {
-        grid-area: header;
-    }
-    .item2 {
-        grid-area: side;
-    }
-    .item3 {
-        grid-area: center;
-    }
-    .item4 {
-      grid-area: main;
-    }
-    .item5 {
-        grid-area: footer;
-    }
-
+```css
+.wrapper {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas: 
+    "header header header"
+    "side center main"
+    "footer footer footer";
+}
+.item1 {
+    grid-area: header;
+}
+.item2 {
+    grid-area: side;
+}
+.item3 {
+    grid-area: center;
+}
+.item4 {
+    grid-area: main;
+}
+.item5 {
+    grid-area: footer;
+}
+```
 注释：*通过引用 `grid-area`属性指定的网格区域的名称来定义网格模板。 重复网格区域的名称导致内容扩展到这些单元格。 一个或连续多个中间不带空格的点号`.`都可以表示一个空单元格。 `grid-template-areas`语法本身提供了网格结构的可视化。*
 以上`grid-template-columns`,`grid-template-rows`,`grid-template-areas`可以缩写为：
-
-    grid-template:
-    "header header header" 100px
-    "side center main" 100px
-    "footer footer footer" 100px
-    / 100px 100px 100px;
-
+```css
+grid-template:
+"header header header" 100px
+"side center main" 100px
+"footer footer footer" 100px
+/ 100px 100px 100px;
+```
     
 ![此处输入图片的描述][5]
 
 #### 高级布局
-
-    <div class="wrapper">
-        <div class="key">aaaaaaaaaaaa</div>
-        <div class="key">bbb</div>
-        <div class="key">ccc</div>
-        <div class="key">ddd</div>
-      	<div class="value">AAA</div>
-        <div class="value">BBB</div>
-        <div class="value">CCC</div>
-        <div class="value">DDD</div>
-    </div>
-
+```html
+<div class="wrapper">
+    <div class="key">aaaaaaaaaaaa</div>
+    <div class="key">bbb</div>
+    <div class="key">ccc</div>
+    <div class="key">ddd</div>
+    <div class="value">AAA</div>
+    <div class="value">BBB</div>
+    <div class="value">CCC</div>
+    <div class="value">DDD</div>
+</div>
+```
 ------
-
-    .wrapper {
-        display: grid;
-      	grid-template-columns: 50px 1fr;
-      	grid-gap: 5px;
-      	grid-auto-flow: dense;
-    }
-    .key{
-      grid-column: 1;
-      word-break:break-all;
-    }
-
+```css
+.wrapper {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-gap: 5px;
+    grid-auto-flow: dense;
+}
+.key{
+    grid-column: 1;
+    word-break:break-all;
+}
+```
 ![此处输入图片的描述][6]
 
 ## 其它：

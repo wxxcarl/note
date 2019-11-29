@@ -4,7 +4,7 @@
 ArrayBuffer 对象，代表内存之中的一段二进制数据，可以通过「视图」进行操作。「视图」部署了数组接口，这意味着，可以用数组的方法操作内存。
 
 创建一个指定长度的 ArrayBuffer 对象，并读取该对象的字节大小：
-````
+````js
 // 8 代表所需要分配的内存大小（单位：字节）
 const buffer = new ArrayBuffer(8);
 
@@ -31,7 +31,7 @@ TypedArray 视图类型很特殊，它 ***不是一个构造函数，而是一�
 - Float64Array：64位浮点数，长度8个字节
 
 实例化对象可以有如下写法：
-````
+````js
 // 写法 1：实例化一个空的视图对象
 new Uint8Array();
 
@@ -81,7 +81,7 @@ console.log(
 ## 二进制数组的应用
 验证下使用 ArrayBuffer 方式读取出来的文件内容是否正确
 
-````
+````js
 const fileInputer = document.getElementById('fileInputer');
 
 function ab2str (arraybuffer) {

@@ -58,33 +58,33 @@ var的语法确实有点丑，相比较而言Sass的变量语法更容易让人�
 结果： .Container { padding: 1em; }，媒体查询丢失。
 
 由于是预处理的关系，在编译的时候无法查看DOM结构，所以媒体查询内的变量定义就会失效。而var实时生效，可以完美解决这个问题。
+```css
+:root {
+    --gutter: 1em; 
+}
 
+@media (min-width: 30em) {
     :root {
-        --gutter: 1em; 
+        --gutter: 2em;
     }
-    
-    @media (min-width: 30em) {
-        :root {
-            --gutter: 2em;
-        }
-        /* 定义的时候需要指定范围，root或者容器内 */
-    }
-    .Container { padding: var(--gutter); }
-
+    /* 定义的时候需要指定范围，root或者容器内 */
+}
+.Container { padding: var(--gutter); }
+```
 除了`@media`，类似的例子如下：
-
-    $font-size: 1em; 
-    .user-setting-large-text { 
-        $font-size: 1.5em; 
-    } 
-    body { font-size: $font-size; }
-    
+```css
+$font-size: 1em; 
+.user-setting-large-text { 
+    $font-size: 1.5em; 
+} 
+body { font-size: $font-size; }
+```
 #### 2. 预处理器变量不能继承
-    
-    .alert { background-color: lightyellow; } 
-    .alert.info { background-color: yellow; } 
-    .alert button { border-color: darken(background-color, 25%); }
-
+```css
+.alert { background-color: lightyellow; } 
+.alert.info { background-color: yellow; } 
+.alert button { border-color: darken(background-color, 25%); }
+```
 最后一句声明试图在`<button>`元素从父元素`.alert`继承的background-color属性使用Sass的`darken`函数,当`.alert`加上`.info`的时候，`<button>`能据此作出响应。在预处理的环境下，显然这行不通。
 而var和普通css一样，具有继承性，即：给元素定义之后，会把该属性传递给子元素，并且和子元素其它的继承属性同样作用在子元素上。
 
@@ -96,14 +96,14 @@ var的语法确实有点丑，相比较而言Sass的变量语法更容易让人�
 
 #### 无法在content属性解析变量
 
-````
+````css
 /* 无效 */
 .bar::before {
     content: var(--percent);
 }
 ````
 可以使用`counter-reset`属性中转一下
-```
+```css
 /* 有效 */
 .bar::before {
     counter-reset: progress var(--percent);

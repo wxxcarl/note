@@ -6,27 +6,27 @@
 在 Home 目录创建一个 .npm-init.js 即可,该文件的 module.exports 即为 package.json 配置内容。
 
 例如编写如下 ~/.npm-init.js
+```js
+const desc = prompt('description?', 'xxx\'s project')
 
-    const desc = prompt('description?', 'xxx\'s project')
-
-    module.exports = {
-        key: 'my key',
-        name: prompt('name?', process.cwd().split('/').pop()),
-        version: '0.0.1',
-        description: desc,
-        main: './src/index.js',
-        scripts: {
-            "serve": "vue-cli-service serve",
-            "build": "vue-cli-service build"
-        },
-        dependencies: {
-            "vue": "^2.5.17"
-        },
-        devDependencies: {
-            "@vue/cli-service": "^3.0.0"
-        }
+module.exports = {
+    key: 'my key',
+    name: prompt('name?', process.cwd().split('/').pop()),
+    version: '0.0.1',
+    description: desc,
+    main: './src/index.js',
+    scripts: {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build"
+    },
+    dependencies: {
+        "vue": "^2.5.17"
+    },
+    devDependencies: {
+        "@vue/cli-service": "^3.0.0"
     }
-
+}
+```
 
 除了生成 package.json可以添加默认dependencies, 因为 .npm-init.js 是一个常规的模块，意味着我们可以执行随便什么 node 脚本可以执行的任务。例如通过 fs 创建 README, .eslintrc 等项目必需文件，实现项目脚手架的作用(*注意使用严格的JSON格式，容易拼写错误*)。
 ##### **题外话，自己再测试的时候发现一个小技巧，`mkdir npm-test && cd &_`* 可以创建文件夹并且直接进入，比mkdir 然后 cd ，简单那么一丢丢，适合文件夹名字较复杂场景

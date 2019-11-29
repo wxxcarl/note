@@ -61,7 +61,7 @@ Vue 在默认情况下，会将数组 this.users 中的，所有对象的第一�
 在简单场景下不需要vuex
 
 `store.js`示例
-````
+````js
 import Vue from "vue";
 
 export const store = Vue.observable({
@@ -75,7 +75,7 @@ export const mutations = {
 };
 ````
 使用示例
-````
+````html
 <template>
   <div>
     <p>Count: {{ count }}</p>
@@ -101,7 +101,7 @@ export const mutations = {
 ````
 
 ### 五、vuex的两个冷门但有用API
-````
+````js
 const store = new Vuex.Store({
   state: {
     count: 0
@@ -111,7 +111,7 @@ const store = new Vuex.Store({
 ````
 - `watch` 监听state变化
 
-````
+````js
 const unsubscribe = store.watch((state, getters) => {
     return [state.count, getters.getCountPlusOne];
   },
@@ -127,7 +127,7 @@ unsubscribe();
 
 - `subscribeAction` 调用监听函数，在每一个 action 分发的时候调用指定的回调函数，并在其中调用自定义代码
 
-````
+````js
 const unsubscribe = store.subscribeAction({
   before: (action, state) => {
     startBigLoadingSpinner();
@@ -142,7 +142,7 @@ unsubscribe();
 ````
 
 ### 六、函数式组件
-````
+````js
 <template functional>
   <div>
     <p v-for="item in props.items" @click="props.itemClick(item);">
@@ -158,7 +158,7 @@ unsubscribe();
 
 创建 pages/*.vue 组件
 
-````
+````html
 <!-- pages/*.vue -->
 <script>
 export default {
