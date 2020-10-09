@@ -36,8 +36,8 @@
     ```js
     git config --global  -e
     ````
-    > `--golbal` 某个用户生效，位于项目下的`~/.gitconfig`<br>
-    `--local` 某个项目生效，位于`.git/config`<br>
+    > `--golbal` 某个用户生效，位于`~/.gitconfig`<br>
+    `--local` 某个项目生效，位于项目下`.git/config`<br>
     `--system` 整个系统生效，位于 `/etc/gitconfig`
 
 
