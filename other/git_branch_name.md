@@ -38,9 +38,9 @@
     ```js
     git config --global  -e
     ````
-    > `--golbal` 某个用户生效，位于项目下的`~/.gitconfig`
-    > `--local` 某个项目生效，位于`.git/config`
-    > `--system` 整个系统生效，位于 `/etc/gitconfig`
+    > `--golbal` 某个用户生效，位于项目下的`~/.gitconfig`<br>
+    `--local` 某个项目生效，位于`.git/config`<br>
+    `--system` 整个系统生效，位于 `/etc/gitconfig`
 
 
 2. 编辑alias,在`[alias]`下增加配置
