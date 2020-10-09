@@ -31,8 +31,6 @@
 
 如果你觉得`git config branch.XXX.description` 命令太难记或者懒得敲打键盘，同样可以为他设置alias
 
-> *注意，以下配置不要用 `git config` 的方式设置*
-
 1. 打开git配置编辑器
 
     ```js
@@ -43,13 +41,13 @@
     `--system` 整个系统生效，位于 `/etc/gitconfig`
 
 
-2. 编辑alias,在`[alias]`下增加配置
+2. 编辑alias,在`[alias]`下增加配置。*注意，以下配置不要用 `git config` 的方式设置*
 
     ```js 
     [alias]
         //其它alias
         desc = "!f() { currBr=`git symbolic-ref -q --short HEAD`;git config branch.${currBr}.description $1; }; f"
-
+    ````
 3. 使用
 
     ```js 
