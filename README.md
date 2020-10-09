@@ -43,4 +43,5 @@
 1. [canvas_svg](https://wxxcarl.github.io/note/other/canvas_svg)
 1. [排序算法](https://wxxcarl.github.io/note/other/排序算法)
 1. [性能优化](https://wxxcarl.github.io/note/other/faster)
+1. [Git分支备注](https://wxxcarl.github.io/note/other/git_branch_name)
     
