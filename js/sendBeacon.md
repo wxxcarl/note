@@ -42,3 +42,9 @@
     var blob = new Blob([JSON.stringify(data)], {type : 'application/json'});
     navigator.sendBeacon(url, blob);
     ````
+
+<style>
+    .page-header {
+        display: none;
+    }
+</style>

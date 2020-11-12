@@ -23,6 +23,7 @@
 4. [create-object](https://wxxcarl.github.io/note/js/create-object)
 4. [js-file](https://wxxcarl.github.io/note/js/js-file)
 4. [error](https://wxxcarl.github.io/note/js/错误监控)
+4. [sendBeacon](https://wxxcarl.github.io/note/js/sendBeacon)
 
 ## Vue
 1. [vue-resource注意事项](https://wxxcarl.github.io/note/vue/vue-resource%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
