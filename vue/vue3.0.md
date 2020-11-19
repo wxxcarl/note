@@ -436,3 +436,14 @@ Vite 是一个由原生 ESM 驱动的 Web 开发构建工具。在开发环境�
 vite使用Koa构建的服务端，处理`import`的资源路径，将处理的template,script,style等所需的依赖以http请求的形式，通过query参数形式区分并加载SFC文件各个模块内容，然后根据type调用不同的`compile`方法解析内容。
 
 webpack之类的打包工具会把各种各样的模块提前打包进bundle中，但打包结果是静态的，不管某个模块的代码是否用得到，它都要被打包进去，显而易见的坏处就是随着项目越来越大，打包文件也越来越大。vite的优雅之处就在于需要某个模块时动态引入，而不是提前打包，自然而然提高了开发体验
+
+
+
+
+
+
+<style>
+    .page-header {
+        display: none;
+    }
+</style>
