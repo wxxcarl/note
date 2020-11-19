@@ -30,7 +30,7 @@
 2. [element-ui迁移2.X指南](https://wxxcarl.github.io/note/vue/element-ui%E8%BF%81%E7%A7%BB2.X%E6%8C%87%E5%8D%97)
 3. [vee-validate使用教程](https://wxxcarl.github.io/note/vue/vee-validate%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
 4. [vue.js小技巧](https://wxxcarl.github.io/note/vue/vue小技巧)
-4. [vue3](https://wxxcarl.github.io/note/vue/vue3)
+4. [vue3](https://wxxcarl.github.io/note/vue/vue3.0)
 4. [vuex本质](https://wxxcarl.github.io/note/vue/vuex)
 
 ## Node
