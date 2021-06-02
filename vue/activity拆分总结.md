@@ -60,7 +60,7 @@ Vue.prototype.$get('/app/sys/front').then(res => {
 ## nginx配置
 本次为实现无缝迁移(域名和地址不变)，特意使用多入口打包的模式，并且在原有的`m.zhaojiling.com`的配置下对ngixn进行了一些特殊的配置:
 
-```node
+```js
 // 所有静态文件指向新的目录,默认静态目录为'assets',
 // 使用'assets-activity'为区分以后别的项目拆分，单独指向
 location ~ ^/assets-activity/.*  {
