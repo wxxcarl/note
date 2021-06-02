@@ -32,6 +32,7 @@
 4. [vue.js小技巧](https://wxxcarl.github.io/note/vue/vue小技巧)
 4. [vue3](https://wxxcarl.github.io/note/vue/vue3.0)
 4. [vuex本质](https://wxxcarl.github.io/note/vue/vuex)
+5. [syao-activity项目迁移](https://wxxcarl.github.io/note/vue/activity拆分总结)
 
 ## Node
 1. [Promise遍历目录下文件](https://wxxcarl.github.io/note/node/Promise遍历目录下文件)
