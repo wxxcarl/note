@@ -17,7 +17,7 @@
 
     文件目录为：
 
-    ```json
+    ````
     activity-front
         --cms
         ----renderPage
